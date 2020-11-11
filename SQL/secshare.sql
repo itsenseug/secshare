@@ -1,0 +1,16 @@
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Exportiere Struktur von Tabelle sec_datd
+CREATE TABLE IF NOT EXISTS `sec_data` (
+  `secId` int(11) NOT NULL AUTO_INCREMENT,
+  `secData` varchar(5000) NOT NULL,
+  `urlPath` varchar(255) NOT NULL,
+  `validity` date NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `oneTime` varchar(5) NOT NULL,
+  PRIMARY KEY (`secId`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
